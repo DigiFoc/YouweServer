@@ -43,7 +43,7 @@ function ProductDetailCard() {
     const { str } = useParams();
 
     const [ProductDetail, setProductDetail] = useState();
-    const [ReletedProduct, SetReletedProduct] = useState();
+    // const [ReletedProduct, SetReletedProduct] = useState();
     const [thum, setThum] = useState();
     const [ptitle, setPtitle] = useState();
     const [Prices, setPrices] = useState();
@@ -88,7 +88,8 @@ function ProductDetailCard() {
     useEffect(() => {
         GetProductDetail();
         // console.log(ReletedProduct);
-    }, [ReletedProduct])
+    // }, [ReletedProduct])
+    }, [])
 
     return (
         <>
@@ -216,7 +217,7 @@ function ProductDetailCard() {
                 Related products
             </div>
 
-            <div className="grid grid-cols-2 sm:w-[95%] md:w-[90%] mx-auto sm:grid-cols-3 md:grid-cols-5">
+{/*             <div className="grid grid-cols-2 sm:w-[95%] md:w-[90%] mx-auto sm:grid-cols-3 md:grid-cols-5">
 
                 {Array.isArray(ReletedProduct) ? (
                     ReletedProduct.map((item) => (
@@ -228,7 +229,7 @@ function ProductDetailCard() {
                         Loading..
                     </div>
                 )}
-            </div>
+            </div> */}
         </>
     )
 }
