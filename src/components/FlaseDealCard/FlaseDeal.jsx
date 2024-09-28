@@ -4,7 +4,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 
 function FlaseDeal(props) {
 
-    const Img_Ulr = "http://localhost:1337";
+    {/* const Img_Ulr = "http://localhost:1337"; */}
 
     return (
         <>
