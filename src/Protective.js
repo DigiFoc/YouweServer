@@ -22,7 +22,7 @@ const Protective = (props) => {
             }
         }
 
-    }, []);
+    });
 
     return (
         <>
