@@ -55,11 +55,11 @@ function ProductDetailCard() {
     }
 
 
-    const GetProductByCategory = async (categorie) => {
-        const res = await fetch(`http://localhost:8000/api/productsbycategory/${categorie}`);
-        const resData = await res.json();
-        SetReletedProduct(resData);
-    }
+    // const GetProductByCategory = async (categorie) => {
+    //     const res = await fetch(`http://localhost:8000/api/productsbycategory/${categorie}`);
+    //     const resData = await res.json();
+    //     SetReletedProduct(resData);
+    // }
 
 
     const GetProductDetail = async () => {
