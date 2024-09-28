@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import FlaseDeal from '../FlaseDealCard/FlaseDeal'
 import { Link } from 'react-router-dom'
 import { Context } from '../../Utils/Context'
