@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import FlaseDeal from '../components/FlaseDealCard/FlaseDeal'
-import { Link, useParams } from 'react-router-dom';
+// import FlaseDeal from '../components/FlaseDealCard/FlaseDeal'
+import { useParams } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Slider from 'react-slick';
 
@@ -50,9 +50,9 @@ function ProductDetailCard() {
     const [orignalPrices, setOrignalPrices] = useState();
 
 
-    const Goto = () => {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth", });
-    }
+    // const Goto = () => {
+    //     window.scrollTo({ top: 0, left: 0, behavior: "smooth", });
+    // }
 
 
     // const GetProductByCategory = async (categorie) => {
@@ -89,7 +89,7 @@ function ProductDetailCard() {
         GetProductDetail();
         // console.log(ReletedProduct);
     // }, [ReletedProduct])
-    }, [])
+    })
 
     return (
         <>
